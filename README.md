@@ -7,6 +7,9 @@
 ## 介绍
 原理就是上面链接分享的
 ---
+## 预览
+![screenshot](https://github.com/AndrewHeZY/3DWrapperView/blob/main/screenshort.gif)
+---
 ## 使用
 将需要3d展示效果的组件包裹起来即可
 ```
