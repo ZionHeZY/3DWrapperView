@@ -29,9 +29,10 @@
    ---
    ## 注意
    1.没有写绑定声明周期部分，需要在页面销毁时调用下unregister()方法
-   2.传感器采集部分只选择了陀螺仪，将时间设置为固定的值，这些都是为了scroll过程中画面效果稳定考虑，一般写法如下
+   2.传感器采集部分只选择了陀螺仪，将时间设置为固定的值，这些都是为了scroll过程中画面效果稳定考虑，一般写法如下：
+   
     ```
-          // 将纳秒转化为秒
+        // 将纳秒转化为秒
         private static final float NS2S = 1.0f / 1000000000.0f;
     ...
         angleX += event.values[0] * (event.timestamp - endTimestamp) * NS2S;
